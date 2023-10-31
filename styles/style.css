@@ -14,6 +14,7 @@
   align-self: center;
   display: flex;
   list-style: circle;
+  gap: 0 28px;
   color: #000;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -24,7 +25,6 @@
 
 .header__links-list-item {
   padding-left: 4px;
-  padding-right: 28px;
 }
 
 .header__links-list-item_no-bullit {
@@ -63,6 +63,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24.3px;
+  width: 240px;
 }
 
 .address a {
@@ -77,8 +78,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 757px;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .overlay {
@@ -90,10 +91,7 @@
 }
 
 .cover__title {
-  padding-top: 165px;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 0px;
+  padding: 165px 50px 0;
   color: #fff;
   font-family: Raleway, sans-serif;
   font-size: 100px;
@@ -106,6 +104,10 @@
   z-index: 2;
 }
 
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
 .aligned-text {
   display: block;
 }
@@ -113,7 +115,6 @@
 .aligned-text_center {
   text-align: center;
   padding-top: 13px;
-  padding-right: 60px;
 }
 
 .aligned-text_right {
@@ -121,33 +122,20 @@
   padding-top: 5px;
 }
 
-.letter__o {
-  padding-left: 30px;
-}
-.letter__e {
-  letter-spacing: 0;
-  padding-left: 30px;
-}
-
-.letters__ado {
-  padding-left: 30px;
-}
-
-.lettes_last {
+.no-letter-spacing {
   letter-spacing: 0;
 }
 
 .cover__description {
-  height: 52px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 128px;
+  padding-right: 50px;
 }
 
 .cover__description-text {
   color: #fff;
-  /*text-align: center;*/
   font-family: Raleway, sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -158,12 +146,10 @@
   z-index: 2;
   word-spacing: 17px;
   padding-right: 83px;
-  padding-left: 422px;
 }
 
 .bet-button {
   width: 257px;
-  height: 52px;
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
@@ -282,7 +268,6 @@
   margin-top: 182px;
   margin-left: 50px;
   margin-right: 50px;
-  height: 487px;
   gap: 25px;
 }
 
@@ -308,19 +293,26 @@
   height: 114px;
 }
 
+.container_with_text {
+  display: flex;
+  flex-direction: column;
+}
+
 .about__title {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .about__text {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -328,13 +320,6 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-}
-
-.container_with_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 100px;
 }
 
 /* СЕКЦИЯ FOOTER */
@@ -362,14 +347,12 @@
 }
 
 .footer__social-icon {
-  width: 100%;
-  height: 100%;
+  width: 48px;
+  height: 48px;
 }
 
 .footer__social-list {
   display: flex;
-  justify-content: space-between;
   list-style: none;
-  width: 240px;
-  height: 48px;
+  gap: 50px;
 }
